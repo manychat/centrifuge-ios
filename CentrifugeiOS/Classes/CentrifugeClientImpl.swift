@@ -137,7 +137,6 @@ class CentrifugeClientImpl: NSObject, CentrifugeClient, WebSocketDelegate {
         }
         
         guard let message = messages?.first else {
-            assertionFailure("Error: Empty messages array")
             return
         }
         
